@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(192, 236, 250);
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-image: url("aaaa.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+
+.profile-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  border-right: 2px solid #ccc;
+}
+
+.logout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 25px;
+  height: 50px;
+  background-color: #343434;
+  color: white;
+  font-size: 20px;
+  border-radius: 25px;
+  user-select: none;
+  transition: .5s all;
+}
+
+
+.logout-btn:hover{
+  background-color:#726969;
+  color: #343434;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+hr {
+  width: 105%;
+  height: 2px;
+  background-color: #343434;
+  margin: 10px 0;
+}
+
+.edit-photo-link {
+  display: block;
+  margin-top: 20px;
+  color: #007BFF;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bio-section h2 {
+  height: 60px;
+  width: 380px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 0 0 20px;
+}
+
+.bio-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  text-justify:auto;
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(12, 1, 1);
+  margin: 10px 0;
+  width: 200px;
+  height:250px;
+  background-color:white;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+.main-content {
+  width: 75%;
+  padding: 20px;
+  box-shadow:#2c2626;
+ 
+}
+
+.form-section fieldset {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #2c2626;
+
+}
+
+legend {
+  font-size: 1.5em;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 98%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.form-group select {
+  width:100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size:medium;
+
+}

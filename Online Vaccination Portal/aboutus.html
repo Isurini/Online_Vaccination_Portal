@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us page</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/aboutus.js"></script>
+    
+</head>
+    
+    
+ 
+    
+</header>
+<header class="header">
+    <div class="logo-section">
+        <img class="logo" src="images/logo.png" >
+        <span class="cs-text">ChildShield</span>
+    </div>
+    <div class="login-section">
+        <img class="log-dp" src="images/appli.webp">
+        <span>LOG IN USING YOUR ACCOUNT ON:</span>
+        
+        <a href="#" class="forgot-link">Forgotten your username or password?</a>
+    </div>
+</header>
+<nav class="nav">
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">About Us </a>
+            
+        </li>
+        <li class="dropdown">
+            <a href="#">services &#9662;</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Student Support</a></li>
+                <li><a href="#">Technical Support</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">FAQs</a>
+            
+        </li>
+        <li><a href="#">Feedback</a></li>
+        
+        <li><a href="#"><button class="login-btn">
+            Login
+         </button></a></li>
+    </ul>
+</nav>
+</header>
+    
+<body>
+    
+    <div class="heading">
+        <h1>About Us</h1>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="images/about.jpg" alt="About" class="image">
+            </div>
+            <div class="about-content">
+
+                <p>Our platform enhances the
+                    vaccination experience by offering essential features such as timely reminders for
+                    upcoming vaccinations, detailed vaccine reports, and direct communication with
+                    healthcare professionals. Users can easily ask questions and receive expert
+                    responses from doctors, ensuring they have the necessary information and support
+                    to adhere to their vaccination schedules. This report outlines our website's
+                    functionalities, user engagement metrics, and the overall impact of our services on
+                    improving health and vaccination compliance.
+                    The portal provides administrators with tools to manage user data, monitor
+                    vaccination schedules, and ensure smooth platform operation.
+                    <span id="seeMore"></span>
+                    <button class="read_more" onclick="seemore()">See more..</button>
+                </p>
+
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+
+<footer>
+    <?php include 'footer.php';
+    ?>
+       
+    </footer>
+    
+    <script>function generateCalendar() {
+        const today = new Date();
+        const month = today.getMonth();
+        const year = today.getFullYear();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        let calendarHTML = '<table>';
+        calendarHTML += '<tr><th colspan="7">' + today.toLocaleString('default', { month: 'long' }) + ' ' + year + '</th></tr>';
+        calendarHTML += '<tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>';
+
+        let day = 1;
+        for (let i = 0; i < 6; i++) {
+            calendarHTML += '<tr>';
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < new Date(year, month, 1).getDay()) {
+                    calendarHTML += '<td></td>';
+                } else if (day > daysInMonth) {
+                    break;
+                } else {
+                    if (day === today.getDate()) {
+                        calendarHTML += '<td class="today">' + day + '</td>';
+                    } else {
+                        calendarHTML += '<td>' + day + '</td>';
+                    }
+                    day++;
+                }
+            }
+            calendarHTML += '</tr>';
+            if (day > daysInMonth) {
+                break;
+            }
+        }
+        calendarHTML += '</table>';
+
+        document.getElementById('calendar').innerHTML = calendarHTML;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        generateCalendar();
+    });
+
+
+
+</script>
+
+
+
+</html>

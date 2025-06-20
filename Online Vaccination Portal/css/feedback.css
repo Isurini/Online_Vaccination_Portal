@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(feedback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+/* Ratings and Reviews */
+.ratings-reviews {
+    text-align: center;
+    padding: 20px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px ;
+}
+
+.ratings:hover{
+    transform: scale(1.1);
+}
+
+
+.stars p {
+    font-size: 18px;
+}
+
+.average-rating p {
+    font-size: 24px;
+    margin: 10px;
+    margin-left: 60px;
+}
+
+/* Feedback Form */
+.feedback-form {
+    text-align: center;
+    padding: 20px;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.feedback-form button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.star-rating {
+    margin: 10px 0;
+}
+
+.star-rating span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star-rating span:hover,
+.star-rating span:hover ~ span {
+    color: rgb(0, 0, 0);
+}

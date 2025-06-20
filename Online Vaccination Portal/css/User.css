@@ -1,0 +1,208 @@
+body{
+    background-image: url(Img/user.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display:flex;
+    margin: 50px 10px;
+}
+
+.profile{
+    flex:1;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+    border-radius: 5px;
+    height: max-content;
+    border: 1px solid #000;
+    width: 30%;
+}
+
+.profile-header{
+    display:block;
+    border-bottom: 1px solid #000000;
+}
+.profile-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 2px;
+    margin: 10px 100px;
+    border: 1px solid #000;
+}
+
+.profile-text-container{
+    line-height: 0.5;
+}
+
+.profile-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu{
+    margin: 0 20px;
+    height: 210px;
+}
+
+.menu-link{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid #000;
+}
+
+.menu-link:first-child{
+    color:#fff;
+    background-color: #000000;
+}
+
+.menu-link:hover{
+    background-color: #f1f5f9;
+    color: #000000;
+    border: 1px solid #000;
+}
+
+.menu-link:first-child:hover{
+    background-color: #536dfe;
+    color: #fff;
+}
+
+.account{
+    flex: 2;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    height: 500px;
+    border: 1px solid #000;
+    font-size: 20px;
+}
+
+.account-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.account-title{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #1e293b;
+    font-weight:500 ;
+    margin-left: 10px;
+}
+
+.btn-container{
+    margin-right: 5px;
+    margin-left: 70%;
+}
+
+.btn-cancel{
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 2em;
+    color: #1e293b;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #a09f9f;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-cancel:hover{
+    background-color: #536dfe;
+}
+
+.btn-save{
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #000000;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-save:hover{
+    background-color: #4053c9;
+}
+
+
+.btn-delete{
+    width: 15em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 2em;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 5px;
+    background-color: #000000;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.btn-delete:hover{
+    background-color: #4053c9;
+}
+.account-edit{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px;
+}
+
+#form{
+    display:block;
+}
+
+#contact{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+#email{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.input-container{
+    width: 90% ;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.input-container label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #768499;
+    font-size: 14px;
+}
+
+.input-container input{
+    height: 30px;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    padding: 5px;
+    color: #768499;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container input:focus{
+    outline: none;
+    border:1.5px solid #000000;
+}
